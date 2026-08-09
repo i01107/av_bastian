@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio Bastian</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style/core.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    This is an announcement bar
+  </div>
+
+  <header class="header-bar">
+    <div class="header-container container">
+      <div class="header-left">
+        <button type="button" class="burger-btn" aria-label="Open menu">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+        <a href="index.html" class="logo">Audio Bastian</a>
+      </div>
+
+      <div class="header-search">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="7"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" class="search-input" placeholder="Search...">
+      </div>
+
+      <div class="header-right">
+        <button type="button" class="user-btn" aria-label="Account">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-6 8-6s8 2 8 6"/>
+          </svg>
+        </button>
+        <select class="lang-select" aria-label="Select language">
+          <option value="en">EN</option>
+          <option value="id">ID</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <nav class="menu-bar">
+    <ul class="menu-list container">
+      <li class="menu-item">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="6" y="2" width="12" height="20" rx="2"/>
+          <circle cx="12" cy="7" r="2"/>
+          <circle cx="12" cy="15" r="3"/>
+        </svg>
+        <span class="menu-label">Speaker</span>
+      </li>
+      <li class="menu-item">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 14v-2a8 8 0 0 1 16 0v2"/>
+          <rect x="2" y="14" width="4" height="6" rx="1"/>
+          <rect x="18" y="14" width="4" height="6" rx="1"/>
+        </svg>
+        <span class="menu-label">Headset</span>
+      </li>
+      <li class="menu-item">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="9" cy="9" r="4"/>
+          <path d="M12 12c3 1 4 3 4 6"/>
+        </svg>
+        <span class="menu-label">IEM</span>
+      </li>
+      <li class="menu-item">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="9" y="2" width="6" height="11" rx="3"/>
+          <path d="M5 11a7 7 0 0 0 14 0"/>
+          <line x1="12" y1="18" x2="12" y2="22"/>
+          <line x1="9" y1="22" x2="15" y2="22"/>
+        </svg>
+        <span class="menu-label">Mic</span>
+      </li>
+      <li class="menu-item">
+        <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="3" y="4" width="18" height="16" rx="2"/>
+          <circle cx="8.5" cy="10" r="2.5"/>
+          <circle cx="15.5" cy="10" r="2.5"/>
+          <line x1="7" y1="17" x2="17" y2="17"/>
+        </svg>
+        <span class="menu-label">Amplifier</span>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <section class="hero">
+      <div class="hero-slides">
+        <img class="hero-slide is-active" src="https://picsum.photos/seed/speaker-audio/1600/700" alt="Speaker">
+        <img class="hero-slide" src="https://picsum.photos/seed/headset-audio/1600/700" alt="Headset">
+        <img class="hero-slide" src="https://picsum.photos/seed/iem-audio/1600/700" alt="IEM">
+        <img class="hero-slide" src="https://picsum.photos/seed/mic-audio/1600/700" alt="Mic">
+        <img class="hero-slide" src="https://picsum.photos/seed/amplifier-audio/1600/700" alt="Amplifier">
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title" id="heroTitle">Speaker</h1>
+        <p class="hero-desc" id="heroDesc">this is Speaker</p>
+        <a href="#" class="hero-btn" id="heroBtn">Go</a>
+      </div>
+
+      <div class="hero-bullets" id="heroBullets">
+        <button type="button" class="hero-bullet is-active" data-slide-to="0" aria-label="Show slide 1"></button>
+        <button type="button" class="hero-bullet" data-slide-to="1" aria-label="Show slide 2"></button>
+        <button type="button" class="hero-bullet" data-slide-to="2" aria-label="Show slide 3"></button>
+        <button type="button" class="hero-bullet" data-slide-to="3" aria-label="Show slide 4"></button>
+        <button type="button" class="hero-bullet" data-slide-to="4" aria-label="Show slide 5"></button>
+      </div>
+    </section>
+  </div>
+
+  <section class="brands">
+    <div class="brands-container container">
+      <div class="brand-box brand-box--gray">
+        <span class="brand-logo">
+          <img src="https://1000logos.net/wp-content/uploads/2017/06/Samsung-Logo-2.png" alt="Sony Logo" class="brand-logo-img">
+        </span>
+      </div>
+      <div class="brand-box brand-box--green">
+        <span class="brand-logo">
+          <img src="https://compulsiontech.co.nz/cdn/shop/files/Logitech-Logo_black.png" alt="Sony Logo" class="brand-logo-img">
+        </span>
+      </div>
+      <div class="brand-box brand-box--orange">
+        <span class="brand-logo">
+          <img src="https://static.cdnlogo.com/logos/l/36/lg-thumb.png" alt="Sony Logo" class="brand-logo-img">
+        </span>
+      </div>
+      <div class="brand-box brand-box--blue">
+        <span class="brand-logo">
+          <img src="https://toa.co.id/assets/new_cmn/img/header/logo.png" alt="Sony Logo" class="brand-logo-img">
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured">
+    <div class="container">
+      <h2 class="featured-title">Featured Products</h2>
+
+      <div class="featured-slider">
+        <ul class="featured-track">
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 14v-2a8 8 0 0 1 16 0v2"/>
+                <rect x="2" y="14" width="4" height="6" rx="1"/>
+                <rect x="18" y="14" width="4" height="6" rx="1"/>
+              </svg>
+            </div>
+            <p class="product-name">Headset</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="9" cy="9" r="4"/>
+                <path d="M12 12c3 1 4 3 4 6"/>
+              </svg>
+            </div>
+            <p class="product-name">IEM</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="16" rx="2"/>
+                <circle cx="8.5" cy="10" r="2.5"/>
+                <circle cx="15.5" cy="10" r="2.5"/>
+                <line x1="7" y1="17" x2="17" y2="17"/>
+              </svg>
+            </div>
+            <p class="product-name">Amplifier</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="2" width="6" height="11" rx="3"/>
+                <path d="M5 11a7 7 0 0 0 14 0"/>
+                <line x1="12" y1="18" x2="12" y2="22"/>
+                <line x1="9" y1="22" x2="15" y2="22"/>
+              </svg>
+            </div>
+            <p class="product-name">Mic</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="4" width="20" height="12" rx="1"/>
+                <line x1="12" y1="16" x2="12" y2="20"/>
+                <line x1="7" y1="20" x2="17" y2="20"/>
+              </svg>
+            </div>
+            <p class="product-name">Projector Screen</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="6" width="18" height="12" rx="1"/>
+                <circle cx="8.5" cy="12" r="3"/>
+                <circle cx="16" cy="9.5" r="1.2"/>
+              </svg>
+            </div>
+            <p class="product-name">Monitor Speaker</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="3" width="6" height="9" rx="3"/>
+                <line x1="12" y1="12" x2="12" y2="18"/>
+                <line x1="12" y1="18" x2="16" y2="21"/>
+              </svg>
+            </div>
+            <p class="product-name">Earphone</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+          <li class="product-card">
+            <div class="product-image">
+              <svg class="product-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 5c0-1 1-2 3-2s3 1 3 2"/>
+                <rect x="5" y="5" width="14" height="16" rx="2"/>
+                <circle cx="12" cy="11" r="3"/>
+                <circle cx="12" cy="17" r="1.5"/>
+              </svg>
+            </div>
+            <p class="product-name">Portable Party Speaker</p>
+            <a href="#" class="product-price-link">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9"/>
+                <path d="M9.5 9.5a2.5 2.5 0 0 1 5 0c0 1.5-2.5 1.5-2.5 3.5"/>
+                <line x1="12" y1="16.5" x2="12" y2="16.5"/>
+              </svg>
+              <span>Click to get the price</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <script src="script/hero-carousel.js" defer></script>
+  <script src="script/featured-slider.js" defer></script>
+</body>
+</html>
