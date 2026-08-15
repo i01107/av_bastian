@@ -5,11 +5,11 @@ const descEl = document.getElementById('heroDesc');
 const btnEl = document.getElementById('heroBtn');
 
 const slideData = [
-  { title: 'Speaker', desc: 'this is Speaker', href: '#speaker' },
-  { title: 'Headset', desc: 'this is Headset', href: '#headset' },
-  { title: 'IEM', desc: 'this is IEM', href: '#iem' },
-  { title: 'Mic', desc: 'this is Mic', href: '#mic' },
-  { title: 'Amplifier', desc: 'this is Amplifier', href: '#amplifier' },
+  { title: 'Z-HX Series-AS', desc: 'Line Array Speakers', href: '#speaker', fontColor: '#ffffff' },
+  { title: 'ZA-D6500-AS 1', desc: 'Digital Power Amplifier', href: '#amplifier', fontColor: '#ffffff' },
+  { title: 'Logitech Sight', desc: 'Tabletop perspective camera', href: '#camera', fontColor: '#FF9100' },
+  { title: 'PTZ Pro 2', desc: '1080p video camera', href: '#mic', fontColor: '#ffffff' },
+  { title: 'Amplifier', desc: 'this is Amplifier', href: '#amplifier', fontColor: '#ffffff' },
 ];
 
 const slideIntervalMs = 5000;
@@ -24,7 +24,9 @@ function goToSlide(index) {
 
   slides[currentSlide].classList.add('is-active');
   bullets[currentSlide].classList.add('is-active');
+  titleEl.style.color = slideData[currentSlide].fontColor;
   titleEl.textContent = slideData[currentSlide].title;
+  descEl.style.color = slideData[currentSlide].fontColor;
   descEl.textContent = slideData[currentSlide].desc;
   btnEl.setAttribute('href', slideData[currentSlide].href);
 }
