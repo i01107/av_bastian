@@ -79,3 +79,8 @@ A box should looks like a e-commerce item. The content is :
 ## Context
 I want the whole page to be responsive. User may open it in tablet or handphone. Audit the page and make it responsive
 <!-- End of task 7 -->
+
+# Task 8
+## Context
+I want you to create me a modern and professional footer or the website. It is an audio-video website
+<!-- End of task 8 -->

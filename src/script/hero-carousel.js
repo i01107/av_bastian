@@ -7,7 +7,7 @@ const btnEl = document.getElementById('heroBtn');
 const slideData = [
   { title: 'Z-HX Series-AS', desc: 'Line Array Speakers', href: '#speaker', fontColor: '#ffffff' },
   { title: 'ZA-D6500-AS 1', desc: 'Digital Power Amplifier', href: '#amplifier', fontColor: '#ffffff' },
-  { title: 'Logitech Sight', desc: 'Tabletop perspective camera', href: '#camera', fontColor: '#FF9100' },
+  { title: 'Logitech Rally Bar', desc: 'All-in-one video bar for medium to large rooms', href: '#camera', fontColor: '#FF9100' },
   { title: 'PTZ Pro 2', desc: '1080p video camera', href: '#mic', fontColor: '#ffffff' },
   { title: 'Amplifier', desc: 'this is Amplifier', href: '#amplifier', fontColor: '#ffffff' },
 ];
