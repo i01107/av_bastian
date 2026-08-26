@@ -84,3 +84,37 @@ I want the whole page to be responsive. User may open it in tablet or handphone.
 ## Context
 I want you to create me a modern and professional footer or the website. It is an audio-video website
 <!-- End of task 8 -->
+
+# Task 9
+## Context
+I want you to update the `menu-bar` nav. The categories now are : Speaker, Cam, Amplifier, TV & Monitor, Presentation tools. Update the icon accordingly
+<!-- End of task 9 -->
+
+# Task 10
+## Context
+I want to create new page. The file will be listing.html. This page will list all of our product with filters.
+- Brands that we are handle at this moment are : Samsung, Logitech, LG, TOA
+- Design should follow index.html file. We will create the content inside the main content area
+- The main area will be devided in 3 part : breadcrumb on the first row, and on the following row : left sidebar and right section
+- The left sidebar will be devided into 3 rows : Categories, Filter by Brand, Price ( slider ), Rating
+- The right section will be the product list
+
+## Left sidebar
+- Categories are : Speaker, Cam, Amplifier, TV & Monitor, Presentation tools
+- When I click a category, filter the product list accordingly. Plus add a category box which is removable at the top of the product list to show the user that the page is currently under that category
+- Filter by Brand will list our brand after a checkbox which will filter out the brand shown on the product list
+- Price section is a slider of min and max price. The curency is Indonesian IDR
+- Rating is a checkbox, from 5 stars down to 1 star
+
+## Product list
+- show the number of total product found based on the filter
+- filter of how many items per page to show, options for now : 10, 20, 50, shown as a drop down
+- `sort by` drop down, use the general options for an e-commerce
+- product list are in grid, 4 item cards per row in normal display size ( laptop ), it should be responsive based on the display size
+- use your best judgement of what should be shown per product card, but don't show the price
+- bottom part is the pagination
+
+For this MVP explore 2 - 3 real products from each brands and categories. Legally, we have the permission from each brand to show their products on our website
+
+I may not explain to you very detail, so please ask me questions if you feel uncertain on some details
+<!-- End of task 10 -->
