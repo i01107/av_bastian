@@ -118,3 +118,8 @@ For this MVP explore 2 - 3 real products from each brands and categories. Legall
 
 I may not explain to you very detail, so please ask me questions if you feel uncertain on some details
 <!-- End of task 10 -->
+
+# Task 11
+## Context
+As you can see, I miss the intial markdown files to work better with AI. I want you to create all the necessary markdown files which I missed for this project
+<!-- End of task 11 -->
