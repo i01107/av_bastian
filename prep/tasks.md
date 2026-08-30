@@ -7,3 +7,8 @@ I want you to build 3 product detail alternative page. I will decide later which
 
 I want them to be modern and professional. You can use free audio related images as the image slider / light box. You can explore existing item detail page from a well known e-commerce like amazon, ebay, or else.
 <!-- End of Task 1 -->
+
+# Task 2
+## Context
+I want you to update all the html files. Change the `Audio Bastian` on the logo with the `src/images/logo.png` file. Add a CSS class if it is necessary. And do not break the page design.
+<!-- End of Task 2 -->
