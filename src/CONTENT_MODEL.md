@@ -25,20 +25,24 @@ They also form the shared category navigation in `template.html`. A future page 
 
 ## Catalogue record shape
 
-Each listing product uses this MVP record:
+The shared catalogue lives in `script/product-data.js`. Each record includes the listing fields plus the stable URL ID and editorial detail content:
 
 ```js
 {
+  id: 'wireless-microphone-system-z-ws422-as',
   name: 'Product name',
   brand: 'Samsung',
   category: 'TV & Monitor',
-  price: 24500000,
-  rating: 4.9,
-  badge: 'Professional'
+  badge: 'Professional',
+  image: 'https://example.com/product.jpg',
+  headline: 'A concise editorial headline.',
+  description: 'Practical product overview copy.',
+  gallery: [{ src: 'https://example.com/product.jpg', alt: 'Product view' }],
+  highlights: ['Product guidance from our team']
 }
 ```
 
-Prices are stored as integer Indonesian rupiah values and formatted as IDR in the UI. Listing cards intentionally omit product prices; price is only used for range filtering and sorting. Ratings are numeric values on a five-point scale.
+IDs are URL-safe slugs generated from product names and are used in product URLs such as `product.html?id=wireless-microphone-system-z-ws422-as`. Keep IDs unique and stable when product names change. Product-specific specifications, ratings, and customer review counts must only be added when verified; the editorial page currently uses category-level copy where verified details are unavailable.
 
 ## Copy tone
 

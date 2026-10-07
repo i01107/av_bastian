@@ -8,10 +8,12 @@ Static frontend prototype for an audio-video reseller. It presents brand highlig
 | --- | --- |
 | `index.html` | Home page with announcement, header, category navigation, hero carousel, brand showcase, featured products, and footer. |
 | `listing.html` | Product catalogue with category, brand, price, rating, sorting, per-page, and pagination controls. |
+| `product.html` | Data-driven product detail page, selected by the product slug query parameter. |
 
 ## Run locally
 
 Open `index.html` in a browser, or serve this directory with any static-file server. No build step or package installation is required. The pages use Tailwind CSS through its CDN and local CSS and JavaScript files.
+
 
 ## Project map
 

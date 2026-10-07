@@ -26,15 +26,17 @@ When creating a page from the shell:
 | --- | --- | --- |
 | `script/hero-carousel.js` | `index.html` | Advances the five hero slides, updates the slide copy, and supports bullet navigation. |
 | `script/featured-slider.js` | `index.html` | Duplicates featured-product cards to make the CSS scrolling loop seamless. |
-| `script/product-listing.js` | `listing.html` | Holds the MVP catalogue and filters, then renders the result count, cards, filter chip, and pagination. |
-| `script/product-gallery.js` | `product1.html`, `product2.html`, `product3.html` | Drives product-image thumbnail selection and the accessible lightbox. |
+| `script/product-data.js` | `listing.html`, `product.html` | Shared catalogue records, URL IDs, and editorial product content. |
+| `script/product-listing.js` | `listing.html` | Filters the shared catalogue, then renders the result count, cards, filter chip, and pagination. |
+| `script/product-detail.js` | `product.html` | Resolves the `id` query parameter and renders the matching product detail content. |
+| `script/product-gallery.js` | `product1.html`, `product.html`, `product3.html` | Drives product-image thumbnail selection and the accessible lightbox. |
 
 ## Product-detail explorations
 
-The three `product*.html` pages are alternative layouts for the same TOA Z-HX Series Line Array product. They share the template shell, responsive product-gallery pattern, and `product-gallery.js` interaction:
+The three `product*.html` pages are alternative layouts for the TOA Z-HX Series Line Array product. `product.html` serves as the editorial, venue-focused presentation for catalogue items, selected by `?id=<product-id>`. It shares the template shell and responsive product-gallery pattern with the other layouts:
 
 - `product1.html` is a classic specification-led detail page.
-- `product2.html` is an editorial, venue-focused presentation.
+- `product.html` is an editorial, venue-focused presentation and the live catalogue detail page.
 - `product3.html` is a commerce-oriented configuration and quote flow.
 
 Treat these as parallel design options. Do not change their shared shell or product data unless the decision is intended to apply to all alternatives.
@@ -44,7 +46,7 @@ Treat these as parallel design options. Do not change their shared shell or prod
 - Keep shared UI styles in `style/core.css`; use component-prefixed class names to avoid collisions.
 - If a shared shell element changes, apply the same markup update to `index.html`, `listing.html`, and `template.html` so subsequent pages inherit the current design.
 - When adding a catalogue category, update its navigation markup, `categories`, `products`, and the icon map in `product-listing.js` together.
-- Product data is currently mock data in `product-listing.js`. Moving it to an API or JSON source should keep the rendering and filter-state contract intact.
+- Product data is currently mock data in `product-data.js`. Moving it to an API or JSON source should keep the rendering and filter-state contract intact.
 - Remote brand and hero images are third-party URLs. Replace them with approved, optimized local assets before production deployment.
 
 ## Responsive behaviour
