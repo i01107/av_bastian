@@ -8,7 +8,6 @@ const slideData = [
   { title: 'Z-HX Series-AS', desc: 'Line Array Speakers', href: '#speaker', fontColor: '#ffffff' },
   { title: 'ZA-D6500-AS 1', desc: 'Digital Power Amplifier', href: '#amplifier', fontColor: '#ffffff' },
   { title: 'Logitech Rally Bar', desc: 'All-in-one video bar for medium to large rooms', href: '#camera', fontColor: '#FF9100' },
-  { title: 'Samsung Soundbar', desc: '5.1 ch audio soundbar', href: '#mic', fontColor: '#ffffff' },
   { title: '', desc: '', href: '#amplifier', fontColor: '#ffffff' },
 ];
 

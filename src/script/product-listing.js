@@ -1,4 +1,4 @@
-const categories = ['Amplifier', 'Microphone', 'Speaker', 'Monitor'];
+const categories = ['Amplifier', 'Microphone', 'Speaker', 'Monitor', 'Conference Cameras', 'Controllers and Schedulers', 'Accessories'];
 const state = { category: '', brands: [], page: 1, perPage: 10, sort: 'featured' };
 const categoryFilters = document.getElementById('categoryFilters');
 const productGrid = document.getElementById('productGrid');
@@ -53,5 +53,12 @@ document.getElementById('sortBy').addEventListener('change', (event) => { state.
 document.getElementById('pagination').addEventListener('click', (event) => { const page = event.target.dataset.page; if (page && Number(page) > 0) { state.page = Number(page); render(); } });
 activeFilters.addEventListener('click', (event) => { if (event.target.id === 'removeCategory') chooseCategory(state.category); });
 document.getElementById('clearFilters').addEventListener('click', () => { Object.assign(state, { category: '', brands: [], page: 1 }); document.querySelectorAll('.product-filters input').forEach((input) => { input.checked = false; }); document.getElementById('minPrice').value = 0; document.getElementById('maxPrice').value = 60000000; render(); });
+
+const requestedCategory = new URLSearchParams(window.location.search).get('category');
+if (requestedCategory && products.some((product) => product.category === requestedCategory)) state.category = requestedCategory;
+
+const requestedBrand = new URLSearchParams(window.location.search).get('brand');
+const brandInput = [...document.querySelectorAll('input[name="brand"]')].find((input) => input.value === requestedBrand);
+if (brandInput) { brandInput.checked = true; state.brands = [brandInput.value]; }
 
 render();

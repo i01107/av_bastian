@@ -4,7 +4,6 @@
 
 The storefront currently represents these authorized brands:
 
-- Samsung
 - Logitech
 - LG
 - TOA
@@ -18,6 +17,11 @@ Use these exact labels everywhere user-visible category data is matched:
 3. `Amplifier`
 4. `TV & Monitor`
 5. `Presentation tools`
+6. `Conference Cameras`
+7. `Controllers and Schedulers`
+8. `Accessories`
+
+Categories 6–8 are the Logitech product groupings from the source product sheet. `Cam` is retained in the navigation but no product currently uses it.
 
 The labels are used as filter values in `listing.html` and `script/product-listing.js`; changing one requires updating both the markup and the JavaScript data.
 
@@ -31,7 +35,7 @@ The shared catalogue lives in `script/product-data.js`. Each record includes the
 {
   id: 'wireless-microphone-system-z-ws422-as',
   name: 'Product name',
-  brand: 'Samsung',
+  brand: 'Logitech',
   category: 'TV & Monitor',
   badge: 'Professional',
   image: 'https://example.com/product.jpg',
